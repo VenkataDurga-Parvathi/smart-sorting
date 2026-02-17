@@ -229,23 +229,38 @@ http://127.0.0.1:5000
 
 
 📌 Features
+
 ✔ Transfer Learning using MobileNetV2
+
 ✔ High Accuracy (94%+)
+
 ✔ Real-time image prediction
+
 ✔ Clean UI
+
 ✔ Flask Backend Integration
+
 ✔ Easy Deployment
 
 🌍 Real-World Applications
+
 Supermarket
+
 Warehouses
+
 Agricultural Industry
+
 Food Quality Inspection
+
 Cold Storage Monitoring
 
 📎 Future Enhancements
+
 Multi-class fruit classification
+
 Live camera detection
+
 Deployment on cloud (Heroku / AWS)
+
 Mobile application integration
 
