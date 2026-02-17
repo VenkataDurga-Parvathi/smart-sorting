@@ -1,17 +1,32 @@
-🍎 Smart Sorting
-Transfer Learning for Identifying Rotten Fruits and Vegetables
-📌 Project Overview
-Smart Sorting is a Deep Learning based web application that classifies fruits and vegetables as Fresh or Rotten using Transfer Learning.
-The system is built using:
-🧠 TensorFlow & Keras
-📷 MobileNetV2 (Pre-trained CNN)
-🌐 Flask Web Framework
-🎨 HTML, CSS
-💻 VS Code
-The model is trained on labeled fruit images and integrated into a Flask web application where users can upload an image and receive an instant prediction with confidence score.
-📂 Project Structure
-<img width="826" height="1018" alt="Screenshot 2026-02-16 201800" src="https://github.com/user-attachments/assets/00300d46-4e48-4174-a8f1-33820cff6adf" />
-🌐 Web Application Pages
+Smart Sorting: Transfer Learning for Identifying Rotten Fruits and Vegetables 
+
+Project Description: 
+ 
+One of the major challenges affecting the agricultural supply chain and food industry is the 
+identification of spoiled fruits and vegetables. A significant portion of food waste occurs due 
+to improper quality inspection and delayed detection of rotten produce. As we know, 
+maintaining food quality is extremely crucial for public health, economic stability, and 
+sustainable resource management. There are various traditional techniques used for sorting and 
+grading fruits and vegetables, but most of them rely on manual inspection, which is time
+consuming, inconsistent, and prone to human error. 
+The detection of rotten fruits and vegetables is a difficult task when performed manually, 
+especially in large-scale markets, warehouses, and supermarkets. Human inspection can be 
+affected by fatigue, lighting conditions, and subjective judgment. By automating the 
+identification process using intelligent systems, industries can reduce food waste, improve 
+quality control, and minimize financial losses. This makes the study of automated fruit quality 
+detection highly important in today’s technology-driven environment. Machine Learning and 
+Deep Learning techniques play a crucial role in solving such image-based classification 
+problems effectively. 
+In this project, Smart Sorting: Transfer Learning for Identifying Rotten Fruits and 
+Vegetables, we use deep learning-based image classification techniques to predict whether a 
+fruit or vegetable is fresh or rotten. We implement transfer learning using pre-trained 
+Convolutional Neural Network (CNN) architectures such as EfficientNet/ResNet to improve 
+accuracy while reducing training time. The dataset is trained and tested using appropriate 
+preprocessing and augmentation techniques. The best-performing model is saved in .h5 format 
+and integrated into a Flask web application. Finally, the system is deployed with a user-friendly 
+interface where users can upload an image and receive real-time predictions. This project 
+demonstrates how AI-powered computer vision can be applied to build a smart, automated 
+sorting system for real-world agricultural and retail applications.
 
 
 
@@ -26,7 +41,9 @@ Contains navigation menu
 Provides “Start Prediction” button
 🖼 Screenshot:<img width="1919" height="1024" alt="Screenshot 2026-02-16 121713" src="https://github.com/user-attachments/assets/42dbb6fe-1cbf-4e73-ba66-22fe2421f909" />
 📝 Description:
+
 The Home page presents the system as an AI-powered fruit sorting application.
+
 It highlights:
 Transfer Learning usage
 Real-time prediction capability
@@ -40,18 +57,21 @@ This page acts as the entry point of the application.
 
 
 
-📊 2️⃣ About Page (about.html)
-📍 Route
+2️⃣ About Page (about.html)
+
 @app.route("/about")
-🎯 Purpose:
-Displays project metrics and model performance.
+
+🎯 Purpose:Displays project metrics and model performance.
+
 🖼 Screenshot:<img width="1919" height="1016" alt="Screenshot 2026-02-16 121729" src="https://github.com/user-attachments/assets/502be140-9922-43b3-963e-85aaa385a102" />
 📝 Description:
+
 The About page provides detailed information about:
 Model Accuracy: 94.6%
 Number of Classes: 4
 Dataset Size: 3200 Images
 24/7 Monitoring capability
+
 This page explains how Transfer Learning with MobileNetV2 is used to achieve high accuracy.
 
 
@@ -62,14 +82,16 @@ This page explains how Transfer Learning with MobileNetV2 is used to achieve hig
 
 
 📤 3️⃣ Predict Page (predict.html)
-📍 Route:
 @app.route("/predict", methods=["GET", "POST"])
 🎯 Purpose:
 Allows user to upload fruit/vegetable image.
+
 🖼 Screenshot:<img width="1919" height="1016" alt="Screenshot 2026-02-16 121747" src="https://github.com/user-attachments/assets/76f752f1-16da-4ca3-9e06-028be881480b" />
 
 📝 Description:
+
 This page contains:
+
 <form action="/predict" method="POST" enctype="multipart/form-data">
 
 Important features:
@@ -89,6 +111,7 @@ When the image is uploaded, it is saved into the uploads/ folder.
 📍 Triggered after prediction
 🎯 Purpose:
 Displays:
+
 Uploaded image
 Prediction result (Fresh / Rotten)
 Confidence percentage
@@ -97,6 +120,7 @@ Model name
 <img width="1911" height="1019" alt="Screenshot 2026-02-16 121810" src="https://github.com/user-attachments/assets/a7bceb2a-afe3-4378-8345-003b7b0eac03" />
 
 📝 Description:
+
 After image upload:
 Image is passed to predict.py
 Model predicts probability
