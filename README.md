@@ -228,6 +228,7 @@ http://127.0.0.1:5000
 <img width="1904" height="1020" alt="Screenshot 2026-02-16 210205" src="https://github.com/user-attachments/assets/2ae50c8b-1784-41a9-b1dd-e315b212621a" />
 
 
+
 📌 Features
 
 ✔ Transfer Learning using MobileNetV2
