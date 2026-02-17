@@ -29,8 +29,6 @@ demonstrates how AI-powered computer vision can be applied to build a smart, aut
 sorting system for real-world agricultural and retail applications.
 
 
-
-
 🏠 1️⃣ Home Page (index.html)
 
 📍 Route:@app.route("/")
@@ -231,38 +229,23 @@ http://127.0.0.1:5000
 
 
 📌 Features
-
 ✔ Transfer Learning using MobileNetV2
-
 ✔ High Accuracy (94%+)
-
 ✔ Real-time image prediction
-
 ✔ Clean UI
-
 ✔ Flask Backend Integration
-
 ✔ Easy Deployment
 
 🌍 Real-World Applications
-
-Supermarkets
-
+Supermarket
 Warehouses
-
 Agricultural Industry
-
 Food Quality Inspection
-
 Cold Storage Monitoring
 
 📎 Future Enhancements
-
 Multi-class fruit classification
-
 Live camera detection
-
 Deployment on cloud (Heroku / AWS)
-
 Mobile application integration
 
