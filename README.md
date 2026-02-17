@@ -82,9 +82,10 @@ This page explains how Transfer Learning with MobileNetV2 is used to achieve hig
 
 
 📤 3️⃣ Predict Page (predict.html)
+
 @app.route("/predict", methods=["GET", "POST"])
-🎯 Purpose:
-Allows user to upload fruit/vegetable image.
+
+🎯 Purpose:Allows user to upload fruit/vegetable image.
 
 🖼 Screenshot:<img width="1919" height="1016" alt="Screenshot 2026-02-16 121747" src="https://github.com/user-attachments/assets/76f752f1-16da-4ca3-9e06-028be881480b" />
 
@@ -108,15 +109,20 @@ When the image is uploaded, it is saved into the uploads/ folder.
 
 
 📈 4️⃣ Result Page (result.html)
+
 📍 Triggered after prediction
 🎯 Purpose:
-Displays:
 
-Uploaded image
+Displays:Uploaded image
+
 Prediction result (Fresh / Rotten)
+
 Confidence percentage
+
 Model name
-🖼 Screenshot:<img width="1915" height="1024" alt="Screenshot 2026-02-16 210258" src="https://github.com/user-attachments/assets/a638ff21-873b-4432-a352-e9df388cb136" />
+
+🖼 Screenshot:
+<img width="1915" height="1024" alt="Screenshot 2026-02-16 210258" src="https://github.com/user-attachments/assets/a638ff21-873b-4432-a352-e9df388cb136" />
 <img width="1911" height="1019" alt="Screenshot 2026-02-16 121810" src="https://github.com/user-attachments/assets/a7bceb2a-afe3-4378-8345-003b7b0eac03" />
 
 📝 Description:
@@ -140,22 +146,27 @@ Model: Transfer Learning CNN
 
 
 📞 5️⃣ Contact Page (contact.html)
-📍 Route:
-@app.route("/contact")
-🎯 Purpose:
-Displays developer and project information.
+
+📍 Route:@app.route("/contact")
+
+🎯 Purpose:Displays developer and project information.
+
 screenshot:<img width="1919" height="1017" alt="Screenshot 2026-02-16 121931" src="https://github.com/user-attachments/assets/3e57b603-f8ef-4f35-9057-1d7caebc9394" />
 
 📝 Description:
+
 Contains:
 Project name
 Developer name
 Email
+
 Institution details
+
 🧠 Model Building (train.py)
 Base Model: MobileNetV2 (ImageNet weights)
 Input Size: 224x224
 Layers Added:
+
 Flatten
 Dense (128, ReLU)
 Dropout (0.5)
@@ -177,12 +188,16 @@ Expand dimensions
 Predict
 Return label + confidence
 🚀 How to Run the Project
+
 1️⃣ Install Dependencies
 pip install -r requirements.txt
+
 2️⃣ Run Flask App
 python app.py
+
 3️⃣ Open Browser
 http://127.0.0.1:5000
+
 <img width="1904" height="1020" alt="Screenshot 2026-02-16 210205" src="https://github.com/user-attachments/assets/2ae50c8b-1784-41a9-b1dd-e315b212621a" />
 
 
