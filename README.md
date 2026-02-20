@@ -265,3 +265,25 @@ Deployment on cloud (Heroku / AWS)
 
 Mobile application integration
 
+Confusion matrix and classification report:
+
+<img width="865" height="473" alt="image" src="https://github.com/user-attachments/assets/8724a761-9035-47f0-8479-94935d3bbf06" />
+
+ 
+Tuned Accuracy Curve:
+
+<img width="913" height="797" alt="image" src="https://github.com/user-attachments/assets/9027665d-331a-41a1-aecd-1e7adce03655" />
+
+ 
+Tuned Loss Curve:
+
+<img width="913" height="604" alt="image" src="https://github.com/user-attachments/assets/7ca21440-9b46-4c4b-b0a3-f63a4be07a7f" />
+
+ 
+Burndown chart :
+
+<img width="913" height="624" alt="image" src="https://github.com/user-attachments/assets/3c5d65be-bca5-42e6-a633-e0851f1e09aa" />
+
+ 
+
+
