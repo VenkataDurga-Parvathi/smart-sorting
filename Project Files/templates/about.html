@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="about-section">
+    <div>
+        <p class="about-tag">About</p>
+        <h1>Learn More About Smart Sorting</h1>
+        <p>Smart Sorting is an AI‑powered system that uses transfer learning to identify rotten fruits and vegetables from images captured in the supply chain.</p>
+        <p>By automating visual inspection, our solution helps farmers, warehouses, and retailers maintain consistent quality while reducing manual effort and food waste.</p>
+
+        <ul class="bullets">
+            <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Grades fruits and vegetables based on ripeness, color, and surface defects.</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Provides continuous monitoring from farm to shelf with instant freshness classification.</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Integrates easily with existing cameras, conveyors, and warehouse sorting equipment.</span>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h2>{{ accuracy }}%</h2>
+                <span>Model accuracy</span>
+                <p>Evaluated on a held‑out validation set using transfer‑learning CNN.</p>
+            </div>
+            <div class="stat-card">
+                <h2>{{ classes }}</h2>
+                <span>Fruit classes</span>
+                <p>Includes fresh and rotten classes for multiple fruits and vegetables.</p>
+            </div>
+            <div class="stat-card">
+                <h2>{{ dataset_size }}</h2>
+                <span>Images trained</span>
+                <p>Labeled images collected from markets and public datasets.[web:6]</p>
+            </div>
+            <div class="stat-card">
+                <h2>24/7</h2>
+                <span>Monitoring</span>
+                <p>Designed for around‑the‑clock operation in cold‑storage and warehouses.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

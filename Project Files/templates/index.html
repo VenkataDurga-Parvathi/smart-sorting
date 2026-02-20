@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+    <h1><span class="accent">AI Smart</span> Fruit Sorting</h1>
+    <p>Transfer learning based system that classifies fruits and vegetables as fresh or rotten for warehouses and supermarkets.</p>
+    <a href="/predict" class="btn">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        Start Prediction
+    </a>
+
+    <div class="features">
+        <div class="feature-box">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Transfer Learning</h3>
+            <p>Pretrained CNN fine‑tuned on fruit images for high‑accuracy freshness detection.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Real‑time</h3>
+            <p>Fast inference suitable for conveyor‑belt based smart sorting systems.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-recycle"></i>
+            <h3>Reduced Waste</h3>
+            <p>Automatically separates rotten produce early to minimize food loss.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Sorting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="dark" id="body">
+
+<nav class="navbar">
+    <div class="nav-left">
+        <div class="logo">Smart Sorting</div>
+    </div>
+
+    <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/predict">Predict</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+        <button class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+{% block content %}{% endblock %}
+
+<footer>
+    <p>© 2026 Smart Sorting | AI Powered Fruit Detection</p>
+</footer>
+
+<!-- Inline JS (since you don’t want a separate main.js) -->
+<script>
+const body = document.getElementById("body");
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+// theme from localStorage
+if (localStorage.getItem("theme") === "light") {
+    body.classList.remove("dark");
+    body.classList.add("light");
+    themeIcon.classList.replace("fa-moon", "fa-sun");
+}
+
+themeToggle?.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    body.classList.toggle("light");
+    const isLight = body.classList.contains("light");
+    themeIcon.classList.toggle("fa-moon", !isLight);
+    themeIcon.classList.toggle("fa-sun", isLight);
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+});
+
+// mobile nav
+hamburger?.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+</script>
+
+</body>
+</html>

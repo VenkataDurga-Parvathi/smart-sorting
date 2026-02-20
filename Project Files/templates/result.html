@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="result-card">
+    <h1>Prediction Result</h1>
+    <img src="{{ image_path }}" alt="Predicted fruit">
+    <h2>{{ prediction_label }}</h2>
+    <p>Confidence: {{ confidence }}%</p>
+    <p>Model: {{ model_name }} (Transfer learning CNN)</p>
+    <br>
+    <a href="/predict" class="btn">
+        <i class="fa-solid fa-arrow-rotate-left"></i>
+        Try Another Image
+    </a>
+</div>
+
+{% endblock %}
