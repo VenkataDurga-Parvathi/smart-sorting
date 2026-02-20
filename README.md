@@ -134,6 +134,8 @@ Model name
 
 <img width="1915" height="1024" alt="Screenshot 2026-02-16 210258" src="https://github.com/user-attachments/assets/a638ff21-873b-4432-a352-e9df388cb136" />
 <img width="1911" height="1019" alt="Screenshot 2026-02-16 121810" src="https://github.com/user-attachments/assets/a7bceb2a-afe3-4378-8345-003b7b0eac03" />
+<img width="1915" height="1018" alt="Screenshot 2026-02-16 121826" src="https://github.com/user-attachments/assets/cae918bf-7312-4f07-ba4d-76ac8377a5c7" />
+
 
 📝 Description:
 
